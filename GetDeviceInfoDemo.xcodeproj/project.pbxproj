@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		67134EBB2048FB91002DB1F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67134EBA2048FB91002DB1F6 /* AppDelegate.m */; };
-		67134EBE2048FB91002DB1F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67134EBD2048FB91002DB1F6 /* ViewController.m */; };
+		67134EBE2048FB91002DB1F6 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67134EBD2048FB91002DB1F6 /* ViewController.mm */; };
 		67134EC12048FB92002DB1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67134EBF2048FB92002DB1F6 /* Main.storyboard */; };
 		67134EC32048FB92002DB1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67134EC22048FB92002DB1F6 /* Assets.xcassets */; };
 		67134EC62048FB92002DB1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67134EC42048FB92002DB1F6 /* LaunchScreen.storyboard */; };
 		67134EC92048FB92002DB1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67134EC82048FB92002DB1F6 /* main.m */; };
+		67134ED12048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 67134ED02048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		67134EB92048FB91002DB1F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67134EBA2048FB91002DB1F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67134EBC2048FB91002DB1F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		67134EBD2048FB91002DB1F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		67134EBD2048FB91002DB1F6 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		67134EC02048FB92002DB1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67134EC22048FB92002DB1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67134EC52048FB92002DB1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67134EC72048FB92002DB1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67134EC82048FB92002DB1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67134ECF2048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+WYGDeviceInfo.h"; sourceTree = "<group>"; };
+		67134ED02048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+WYGDeviceInfo.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,9 @@
 				67134EB92048FB91002DB1F6 /* AppDelegate.h */,
 				67134EBA2048FB91002DB1F6 /* AppDelegate.m */,
 				67134EBC2048FB91002DB1F6 /* ViewController.h */,
-				67134EBD2048FB91002DB1F6 /* ViewController.m */,
+				67134EBD2048FB91002DB1F6 /* ViewController.mm */,
+				67134ECF2048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.h */,
+				67134ED02048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.m */,
 				67134EBF2048FB92002DB1F6 /* Main.storyboard */,
 				67134EC22048FB92002DB1F6 /* Assets.xcassets */,
 				67134EC42048FB92002DB1F6 /* LaunchScreen.storyboard */,
@@ -142,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67134EBE2048FB91002DB1F6 /* ViewController.m in Sources */,
+				67134EBE2048FB91002DB1F6 /* ViewController.mm in Sources */,
 				67134EC92048FB92002DB1F6 /* main.m in Sources */,
 				67134EBB2048FB91002DB1F6 /* AppDelegate.m in Sources */,
+				67134ED12048FC7D002DB1F6 /* UIDevice+WYGDeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S47T4UESP3;
 				INFOPLIST_FILE = GetDeviceInfoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.GetDeviceInfoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S47T4UESP3;
 				INFOPLIST_FILE = GetDeviceInfoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.GetDeviceInfoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
